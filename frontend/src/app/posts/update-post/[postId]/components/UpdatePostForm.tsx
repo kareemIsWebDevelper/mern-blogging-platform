@@ -31,7 +31,7 @@ export const UpdatePostForm
 							value={body}
 						/>
 					</fieldset>
-					<button type="submit" className="btn btn-primary md:w-44 md:text-xl mt-4">
+					<button type="submit" className="text-white bg-blue-500 p-2 md:w-44 md:text-xl mt-4">
 						Update
 					</button>
 				</form>
