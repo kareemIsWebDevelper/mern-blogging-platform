@@ -1,0 +1,39 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import './scss/app';
+
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  @apply dark:bg-[#01010c] dark:text-white;
+  header {
+    @apply relative bg-[#fff] text-black dark:bg-[#01010c] dark:text-white;
+    .navBar {
+      @apply flex justify-between items-center border dark:border-none shadow w-full px-8 py-4 h-14 dark:bg-slate-950;
+    }
+    .navBarMenu {
+      @apply bg-[#fff] text-black dark:bg-[#01010c] dark:text-white transition-opacity fixed h-screen md:h-52 md:shadow md:border w-full md:w-32 z-20 right-0 md:right-4 top-0 md:top-16;
+      .navBarMenuHeader {
+        @apply flex justify-between items-center border dark:border-none shadow px-8 py-4 h-14 md:hidden;
+      }
+      .navBarMenuText {
+        @apply grid justify-center content-around gap-4 p-24 text-black text-2xl md:text-lg md:p-0 text-center md:mt-3;
+      }
+    }
+  }
+  main {
+    @apply p-4 md:p-12 w-full grid gap-16 place-items-center;
+  }
+  footer {
+    @apply p-8 py-4 mt-24 grid justify-center content-around gap-3 text-lg md:text-2xl w-full bg-black text-white text-center;
+  }
+}
+

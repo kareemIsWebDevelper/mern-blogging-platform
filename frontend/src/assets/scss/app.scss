@@ -1,0 +1,19 @@
+.gridCenter {
+  @apply grid place-items-center;
+}
+.gridStart {
+  @apply grid place-items-start;
+}
+
+#postCard {
+  width: 330px;
+  height: 250px;
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+    height: 400px;
+  }
+  .card-text {
+    overflow: auto;
+  }
+}
