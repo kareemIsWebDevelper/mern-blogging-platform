@@ -11,7 +11,7 @@ const Footer = () => {
                 <br className="md:hidden" />
                 thoughts and ideas
             </p>
-            <p className="-mt-4">© All copyrights preserved 2023</p>
+            <p>© All copyrights preserved 2023</p>
         </div>
     );
 };
