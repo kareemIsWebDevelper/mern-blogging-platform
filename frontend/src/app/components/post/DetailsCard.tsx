@@ -39,7 +39,7 @@ export const DetailsCard =
 				<div className="bg-white fixed top-0 left-0 w-full z-30 border shadow p-8 h-44 gridCenter">
 					<p>You are going to delete post !</p>
 					<div className="flex place-items-center gap-4">
-						<button type="button" className="btn btn-danger" onClick={() => setToggle(false)}>
+						<button type="button" className="text-white text-sm rounded bg-red-600 p-2 md:w-44 md:text-xl mt-4"> onClick={() => setToggle(false)}>
 							Cancel
 						</button>
 						<button
@@ -48,7 +48,7 @@ export const DetailsCard =
 								setToggle(false);
 							}}
 							type="button"
-							className="btn btn-primary"
+							className="text-white text-sm rounded bg-blue-500 p-2 md:w-44 md:text-xl mt-4"
 						>
 							Confirm
 						</button>
