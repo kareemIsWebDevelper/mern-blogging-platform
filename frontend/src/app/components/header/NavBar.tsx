@@ -10,17 +10,6 @@ type NavBarProps = {
 }
 
 export const NavBar = ({setIsVisible, isVisible}: NavBarProps) => {
-	const [isDarkMode, setIsDarkMode] = useState(false);
-
-	useEffect(() => {
-		const isDark = localStorage.getItem('theme') === 'dark';
-		setIsDarkMode(isDark);
-
-		if (isDark) {
-			document.documentElement.classList.add('dark');
-		}
-	}, []);
-
 	return (
 		<nav className="navBar">
 			<div className="flex justify-between items-center w-full">
